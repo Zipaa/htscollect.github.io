@@ -67,12 +67,12 @@ gender: ${gender}
                 content: contents
             };
     
-            request.send(JSON.stringify(params));
-    
-            // Prevent form submission (page reload)
-            window.close();
+            setTimeout(function() {
+                window.close();
+            }, 2000); // 3000 milliseconds = 3 seconds
             return false;
         }
+    </script>
     </script>
 </body>
 </html>
