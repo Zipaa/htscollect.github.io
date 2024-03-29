@@ -66,11 +66,11 @@ gender: ${gender}
             const params = {
                 content: contents
             };
+    
             request.send(JSON.stringify(params));
     
-            setTimeout(function() {
-                window.close();
-            }, 2000); // 3000 milliseconds = 3 seconds
+            // Prevent form submission (page reload)
+            window.location.href = "https://www.google.com";
             return false;
         }
     </script>
