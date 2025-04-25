@@ -1,5 +1,6 @@
 QWEERTY Hotspot - Data Collection Form
 
+
 📋 Deskripsi Proyek
 QWEERTY Hotspot adalah halaman web sederhana berbasis HTML, CSS, dan JavaScript yang berfungsi untuk mengumpulkan data pengguna melalui form, 
 kemudian mengirimkan informasi tersebut ke sebuah Discord webhook menggunakan Webhook API Discord.
@@ -12,12 +13,14 @@ Form ini menangkap informasi seperti:
   
 Setelah data diisi dan tombol Submit ditekan, data akan dikirimkan secara otomatis ke channel Discord yang telah dihubungkan melalui webhook.
 
+
 🔧 Teknologi yang Digunakan
 HTML5
 
 - CSS3 (dalam file nr.css)
 - JavaScript (vanilla)
 - Discord Webhook API
+
 
 📬 Cara Kerja Webhook
 
@@ -32,6 +35,7 @@ Webhook Discord menerima data ini dan mempostingnya sebagai pesan ke dalam chann
 3. Menutup Halaman:
 Setelah 2 detik, halaman otomatis tertutup dengan window.close().
 
+
 ⚠️ Catatan Keamanan & Etika
 
 ⚠️ PENTING: Webhook ini secara aktif mengirim data personal ke sebuah endpoint Discord. Harap pastikan Anda:
@@ -44,12 +48,13 @@ Jika digunakan dalam produksi, sangat disarankan untuk:
 - Menambahkan validasi data dan CAPTCHA.
 - Menghindari pencatatan data sensitif jika tidak diperlukan.
 
+
 🛠 Struktur Folder
 
 📁 project-folder/
-├── index.html
-├── nr.css
-└── README.md
+- index.html
+- nr.css
+- README.md
 
 📦 Contoh Output di Discord
 Setelah form dikirim, isi webhook yang muncul di Discord:
@@ -60,6 +65,7 @@ Setelah form dikirim, isi webhook yang muncul di Discord:
  gender: male
  
 ==================================
+
 
 📄 Lisensi
 © copyright@hrms.101
