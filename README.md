@@ -39,9 +39,9 @@ Setelah 2 detik, halaman otomatis tertutup dengan window.close().
 ⚠️ Catatan Keamanan & Etika
 
 ⚠️ PENTING: Webhook ini secara aktif mengirim data personal ke sebuah endpoint Discord. Harap pastikan Anda:
-- Memiliki izin yang sah untuk mengumpulkan data pengguna.
-- Tidak menyalahgunakan webhook untuk keperluan phising, spam, atau aktivitas ilegal lainnya.
-- Tidak menyebarkan data pribadi tanpa izin eksplisit dari pemilik data.
+1. Memiliki izin yang sah untuk mengumpulkan data pengguna.
+2. Tidak menyalahgunakan webhook untuk keperluan phising, spam, atau aktivitas ilegal lainnya.
+3. Tidak menyebarkan data pribadi tanpa izin eksplisit dari pemilik data.
 
 Jika digunakan dalam produksi, sangat disarankan untuk:
 - Mengamankan endpoint webhook Anda (misalnya, menggunakan backend proxy).
