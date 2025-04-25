@@ -47,12 +47,12 @@ Jika digunakan dalam produksi, sangat disarankan untuk:
 🛠 Struktur Folder
 
 📁 project-folder/
-├── index.html      # File utama form HTML
-├── nr.css          # File CSS eksternal untuk styling (tidak ditampilkan di atas)
-└── README.md       # Dokumentasi (file ini)
+├── index.html
+├── nr.css
+└── README.md
+
 📦 Contoh Output di Discord
 Setelah form dikirim, isi webhook yang muncul di Discord:
-
 
  name: Benjamin
  email: Benja.min@example.com
