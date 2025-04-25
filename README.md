@@ -59,10 +59,7 @@ Jika digunakan dalam produksi, sangat disarankan untuk:
 📦 Contoh Output di Discord
 Setelah form dikirim, isi webhook yang muncul di Discord:
 
- name: Benjamin
- email: Benja.min@example.com
- date: 2000-01-01
- gender: male
+name: Benjamin | email: Benja.min@example.com | date: 2000-01-01 | gender: male
  
 ==================================
 
